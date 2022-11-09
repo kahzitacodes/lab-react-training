@@ -1,0 +1,30 @@
+.cardWrapper {
+     border-radius: 20px;
+     display: flex;
+     flex-direction: column;
+     height: 200px;
+     justify-content: space-between;
+     padding: 20px;
+}
+
+.cardLogo {
+     align-self: end;
+     height: 30px;
+     width: auto;
+}
+.cardLogo img {
+     max-height: 100%;
+}
+.cardNumber {
+     font-size: 2rem;;
+     font-weight: 400;
+}
+.infos{
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+}
+.cardInfos {
+     display: flex;
+     gap: 20px;
+}

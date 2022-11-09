@@ -1,0 +1,36 @@
+.cardWrapper {
+     background-color: #455EB5;
+     border-radius: 10px;
+     display: flex;
+     gap: 20px;
+     justify-content: center;
+     margin-bottom: 20px;
+     padding: 20px;
+}
+
+.cardWrapper p {
+     color: white;
+}
+
+.cardImg {
+     border-radius: 50px;
+     overflow: hidden;
+     height: 100px;
+     width: 100px;
+}
+
+.cardImg img {
+     height: 100%;
+}
+
+.cardContent{
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+}
+
+.cardContent h4 {
+     font-size: 1.5rem;
+     color: white;
+}
+
