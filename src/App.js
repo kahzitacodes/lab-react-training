@@ -1,4 +1,3 @@
-import data from "./data/lab.json"
 import { IdCard } from './components/IdCard';
 import { Greetings } from './components/Greetings';
 import { Random } from './components/Random';
@@ -6,25 +5,33 @@ import { BoxColor } from './components/BoxColor';
 import { CreditCard } from './components/CreditCard';
 import { Rating } from './components/Rating';
 import { DriverCard } from './components/DriverCard';
+import { LikeButton } from './components/LikeButton';
+import { ClickablePicture } from './components/ClickablePicture';
+import { Dice } from './components/Dice';
+import { Carousel } from './components/Carousel';
 
 function App() {
   return (
     <div className="App">
       <div className="container">
         <h2>ID Cards</h2>
-        {data.map((element) => {
-          return (
-            <IdCard 
-              lastName={element.lastName}
-              firstName={element.firstName}
-              gender={element.gender}
-              height={element.height}
-              birth={element.birth}
-              picture={element.picture}
-              key={element.lastName}
-            />
-          )
-        })}
+        <IdCard
+          lastName='Doe'
+          firstName='John'
+          gender='male'
+          height={178}
+          birth={new Date("1992-07-14")}
+          picture="https://randomuser.me/api/portraits/men/44.jpg"
+        />
+
+        <IdCard
+          lastName='Delores '
+          firstName='Obrien'
+          gender='female'
+          height={172}
+          birth={new Date("1988-05-11")}
+          picture="https://randomuser.me/api/portraits/women/44.jpg"
+        />
 
         <h2>Greetings</h2>
         <Greetings lang="de" name="Ludwig"/>
@@ -105,6 +112,31 @@ function App() {
             }}
           />
         </div>
+
+        <h2>Like button</h2>
+        <LikeButton />
+        <LikeButton />
+
+        <h2>Clickable Picture</h2>
+          
+        <ClickablePicture
+          img='cat.png'
+          imgClicked='cat-boss.png'
+        />
+
+      <h2>Dice</h2>
+      <Dice />
+
+      <h2>Carousel</h2>
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
       </div>
     </div>
   );

@@ -1,0 +1,17 @@
+.btn {
+     border: 1px solid #ddd;
+     background: white;
+     border-radius: 50px;
+     width: 40px;
+     font-size: 2rem;
+}
+.navigation {
+     display: flex;
+     gap: 20px;
+     padding: 0 15px;
+}
+.displayImage {
+     width: 128px;
+     height: 128px;
+     margin-bottom: 15px;
+}

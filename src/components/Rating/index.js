@@ -1,5 +1,3 @@
-import style from "./style.module.css";
-
 export function Rating(props) {
      let { children } = props;
 
